@@ -1,0 +1,75 @@
+.sidebar{
+    background-color: #202124;
+    width: 20%;
+    padding-right: 20px;
+    height: 100vh;
+    margin: 0;
+    margin-top: 0px;
+    position: fixed;
+    display: block;
+    
+    top: 0;
+    left:0;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .7);
+    z-index: 5;
+    font-size: 15px;
+    height:100vh;
+    animation: slideIn .3s;
+}
+.sidebar > div{
+    position:relative;
+    padding-top: 85px;
+    /* overflow-y: scroll; */
+    height: 100vh;
+    z-index: -99999999999999999999999999999;
+    /* padding: 15px; */
+}
+.sidebar::-webkit-scrollbar-element{
+    background:red;
+}
+
+ .sidebar > div > div{
+    color:grey;
+  
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    font-weight: 500;
+    padding-left: 25px;
+    cursor: pointer;
+ }
+
+ .sidebar > div > div:hover > span{
+    color:#7799d2;
+ }
+ .sidebar > div > div:hover > i{
+    color:#7799d2;
+ }
+ @keyframes slideIn {
+     from{
+         transform: translateX(-100%);
+     }
+     to{
+        transform: translateX(0);
+     }
+     
+ }
+ 
+
+.sidebar div > div > i{
+    padding-right: 15px;
+}
+.selected{
+    background-color: rgba(49, 90, 201, 0.507);
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+  
+}
+.selected span{
+   
+    color:#7799d2
+}
+.selected i{
+    
+    color:#7799d2
+}

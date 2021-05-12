@@ -1,12 +1,17 @@
 import './App.css';
-import styled from 'styled-components';
-import Header from './components/Header';
+
+import Carousel from './components/Carousel/Carousel'
+import Header from './components/header/Header';
+import Headlines from './components/Headlines/Headlines'
+
 
 function App() {
   return (
-    <Head>
+    <>
         <Header  />
-    </Head>
+       <Carousel />
+        <Headlines/>
+    </>
   );
 }
 
@@ -14,6 +19,4 @@ function App() {
 
 export default App;
 
-const Head =styled.div`
-color : red;
-`
+
